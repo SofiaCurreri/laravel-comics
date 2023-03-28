@@ -7,17 +7,23 @@
 
   <title>Laravel Comics</title>
 
+  {{-- CDN Bootstrap --}}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
   {{-- Includiamo gli assets con la direttiva @vite --}}
   @vite('resources/js/app.js')
+  @vite('resources/scss/app.scss') 
+  {{-- ^ non funziona --}}
 </head>
 
 <body>
-  <main>
-    <div class="container d-flex flex-column jumbotron align-items-center justify-content-center text-center">
+  <header>
+    @include('partials._header')
+  </header>
+  <main>   
       {{-- <img class="my-1" src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
       
 
-    </div>
   </main>
 </body>
 

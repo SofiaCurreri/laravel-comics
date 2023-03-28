@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
+nav ul {
+    gap: 0.6rem;
+}
+
 .jumbotron {
     min-height: 100vh;
 }
