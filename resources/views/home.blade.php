@@ -12,8 +12,7 @@
 
   {{-- Includiamo gli assets con la direttiva @vite --}}
   @vite('resources/js/app.js')
-  @vite('resources/scss/app.scss') 
-  {{-- ^ non funziona --}}
+
 </head>
 
 <body>
@@ -22,9 +21,23 @@
   </header>
   <main>   
       {{-- <img class="my-1" src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
+      @section('jumbotron')
       
+      @endsection
 
+
+      @section('current-series')
+
+      @endsection
+
+      @section('thumbs') 
+
+      @endsection
   </main>
+
+  <footer>
+    
+  </footer>
 </body>
 
 </html>
